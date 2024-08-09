@@ -1,0 +1,32 @@
+@supports (animation-timeline: scroll()){
+    .top{
+        height: 500vh;
+    }
+    .top__layer{
+        animation-timeline: scroll();
+        animation-timing-function: linear;
+        animation-fill-mode: both;
+        animation-range: 0 500vh;
+    }
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    font-family: "Prompt", sans-serif;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+}
