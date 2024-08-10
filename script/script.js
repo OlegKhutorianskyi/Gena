@@ -11,3 +11,23 @@ menuClose.addEventListener('click', () =>{
     menuList.classList.remove('menu__list--open')
     menuShadow.classList.remove('menu--open')
 })
+
+$(function(){
+    Fancybox.bind("[data-fancybox]", {
+        
+      });
+      
+    // $('.slider').slick({
+    //     slidesToShow: 4,
+    //     slidesToScroll: 4,
+    //     dots: true,
+    //     autoplay: true,
+    //     autoplaySpeed: 2000,
+    //     centerMode: true,
+        
+    // });
+          
+    // $('.single-item-rtl').slick({
+    //     rtl: true
+    // });      
+});

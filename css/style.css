@@ -1,5 +1,6 @@
 html{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -136,8 +137,72 @@ body{
     margin: 150px auto;
 }
 
+/* .adwehrsysteme__inner{
+    font-family: 'Cormorant', serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    color: #151618
+} */
+
+.adwehrsysteme__title{
+    font-size: 60px;
+    margin-bottom: 20px;
+    max-width: 780px;
+    line-height: 1;
+    font-weight: 400;
+
+}
+.adwehrsysteme__subtitle{
+    font-size: 24px;
+    margin-bottom: 50px;
+    max-width: 560px;
+    line-height: normal;
+}
 
 
+.slider__text{
+    margin-bottom: 30px;
+}
+.photo{
+    display: flex;
+    gap: 25px;
+}
+.photo__items{
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    height: 20px;
+    width: 80px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+.photo__items img{
+    width: initial;
+    height: 100%;
+}
+/* .slider{
+    width: 80%;
+    margin: 0 auto;
+}
+.slider__photo-items{
+    max-height: 600px;
+}
+.slider__photo-items img{
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+}
+.slick-prev slick-arrow::before{
+    background-color: #000;
+} */
 
 
 @media (max-width: 1000px){
@@ -211,6 +276,7 @@ body{
         margin-right: 110px;
     }
 }
+
 @media (max-width: 768px){
     .header__inner{
         padding-left: 64px;
