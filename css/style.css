@@ -102,7 +102,7 @@ body{
 .top{
     background-image: url(../images/projecte-topBanner.png);
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom left -835px;
     background-size: cover;
 }
 .top__inner{
@@ -352,6 +352,14 @@ iframe{
     width: 100%;
 }
 
+@media (max-width: 1200px) {
+    .menu__tel{
+        display: none;
+    }
+    .header__inner{
+        padding: 25px 256px 10px 30px;
+    }
+}
   
 @media (max-width: 1000px){
   .logo{
