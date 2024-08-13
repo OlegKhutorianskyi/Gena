@@ -12,22 +12,17 @@ menuClose.addEventListener('click', () =>{
     menuShadow.classList.remove('menu--open')
 })
 
+
+
 $(function(){
+
+const options = {
+    Images: {
+        initialSize: "fit",
+    },
+};
     Fancybox.bind("[data-fancybox]", {
-        
+        groupAll: true
       });
       
-    // $('.slider').slick({
-    //     slidesToShow: 4,
-    //     slidesToScroll: 4,
-    //     dots: true,
-    //     autoplay: true,
-    //     autoplaySpeed: 2000,
-    //     centerMode: true,
-        
-    // });
-          
-    // $('.single-item-rtl').slick({
-    //     rtl: true
-    // });      
 });

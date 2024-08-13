@@ -137,15 +137,55 @@ body{
     margin: 150px auto;
 }
 
-/* .adwehrsysteme__inner{
-    font-family: 'Cormorant', serif;
-    font-weight: 400;
+
+.leistungen{
+     margin: 150px auto;
+     background-color: #f7f2ea;
+     padding: 40px;
+
+}
+.leistungen__inner{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    text-align: center;
-    color: #151618
-} */
+    justify-content: space-between;
+}
+.leistungen__text{
+    max-width: 50%;
+}
+
+
+.leistungen__title{
+    font-size: 40px;
+    margin-bottom: 20px;
+    max-width: 780px;
+    line-height: 1;
+    font-weight: 400;
+}
+.leistungen__list-title{
+    font-size: 30px;
+    margin-bottom: 20px;
+    max-width: 780px;
+    line-height: 1;
+    font-weight: 400;
+}
+.leistungen__list{
+   padding: 20px; 
+}
+
+.list__item::before{
+    content: '>';
+    font-weight: bold;
+
+}
+
+.adwehrsysteme__subtitle{
+    font-size: 24px;
+    margin-bottom: 50px;
+    max-width: 560px;
+    line-height: normal;
+}
+
+
+
 
 .adwehrsysteme__title{
     font-size: 60px;
@@ -167,44 +207,150 @@ body{
     margin-bottom: 30px;
 }
 .photo{
-    display: flex;
-    gap: 25px;
+    text-align: center;
+    margin: 70px auto;
+    padding: 10px;
 }
-.photo__items{
+
+.photo__items img{
     background-repeat: no-repeat;
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: cover;
-    height: 20px;
-    width: 80px;
     overflow: hidden;
-    width: 200px;
-    height: 200px;
-    margin: 10px;
+}
+
+
+.projecte{
+    margin: 150px auto;
+}
+.projecte__inner{
+    background-image: url(../images/projecte-topBanner.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    padding: 20px;
+    min-height: 330px;
+    color: #fff;
+    font-family: 'Cormorant', serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.projecte__title{
+    font-size: 40px;
+    margin-bottom: 20px;
+    max-width: 780px;
+    line-height: 1;
+    font-weight: 400;
+}
+.projecte__subtitle,
+.projecte__text{
+    font-size: 20px;
+    margin-bottom: 48px;
+    max-width: 560px;
+    line-height: normal;
+}
+.projecte__text{
+    font-size: 25px;
+}
+.projecte__text-inner{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: 'Cormorant', serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: normal;
+    max-width: 704px;
+    margin: 50px auto;
+}
+.projecte__gallery{
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+.kontakt{
+    background-color: #f7f2ea;
+    padding: 20px;
+    outline: none;
+}
+.kontakt__title{
+    font-family: 'Cormorant', serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    max-width: 780px;
+    line-height: 1;
+    font-weight: 400;
+}
+.kontakt__subtitle{
+    font-size: 24px;
+    margin-bottom: 50px;
+    max-width: 560px;
+    line-height: normal;
     margin-bottom: 50px;
 }
-.photo__items img{
-    width: initial;
-    height: 100%;
+.kontakt__form{
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    outline: none;
 }
-/* .slider{
-    width: 80%;
-    margin: 0 auto;
+.kontakt__form input{
+    padding: 20px;
+    border: none;
+    outline: none;
 }
-.slider__photo-items{
-    max-height: 600px;
+.kontakt__form textarea{
+    outline: none;
+    padding: 20px;
+    border: none;
+    resize: none;
 }
-.slider__photo-items img{
-    background-repeat: no-repeat;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: cover;
+.kontakt__form textarea:focus{
+    transition: .5s;
+    border-radius: 30px;
 }
-.slick-prev slick-arrow::before{
-    background-color: #000;
-} */
+.kontakt__form input:focus{
+    transition: .5s;
+    border-radius: 30px;
+}
+.kontakt__form-button{
+    background-color: #fff;
+    cursor: pointer;
+    font-family: 'Cormorant', serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.kontakt__form-button:hover{
+    transition: .5s;
+    transform: scale(1.1);
+}
+.footer{
+    margin: 100px auto;
+    padding: 50px;
+}
+.footer__inner{
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.footer__kontakt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+iframe{
+    width: 100%;
+}
 
-
+  
 @media (max-width: 1000px){
   .logo{
     margin-bottom: 0;
@@ -275,6 +421,18 @@ body{
         margin-left: auto;
         margin-right: 110px;
     }
+    .leistungen{
+        margin: 0 auto;
+    }
+    
+    .projecte__subtitle{
+        margin-bottom: 0;
+    }
+    .footer{
+        padding: 0;
+
+    }
+
 }
 
 @media (max-width: 768px){
@@ -285,6 +443,26 @@ body{
     .blockquote__text{
         max-width: 640px;
     }
+    .leistungen__title{
+        font-size: 20px;
+    }
+    .leistungen__subtitle{
+        font-size: 15px;
+    }
+    .leistungen__list{
+        padding: 0;
+    }
+    .leistungen__list-title{
+        font-size: 20px;
+    }
+    .leistungen__list{
+        font-size: 15px;
+        margin-left: 15px;
+    }
+    .adwehrsysteme__inner{
+        margin-top: 40px;
+    }
+    
 }
 @media (max-width: 680px){
     .container{
@@ -305,13 +483,24 @@ body{
         margin-top: 60px;
         margin-bottom: 60px;
     }
+    
+    
 }
 @media (max-width: 600px){
     .menu__tel{
-        display: none;
+        display: none;  
     }
     .logo{
         margin-right: 0;
+    }
+    .adwehrsysteme__title{
+        font-size: 40px;
+    }
+    .projecte{
+        margin: 50px auto;
+    }
+    .header__inner{
+        padding: 0;
     }
 }
 @media (max-width: 480px){
@@ -320,6 +509,28 @@ body{
     }
     .menu__list{
         width: 360px;
+    }
+    .leistungen__inner{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .leistungen__text{
+        max-width: 100%;
+    }
+    .projecte__title{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .projecte__subtitle{
+        font-size: 15px;
+    }
+    .projecte__text-inner{
+        margin: 15px auto 0;
+    }
+    .projecte__text {
+        font-size: 15px;
+        margin-bottom: 20px;
     }
 }
 @media (max-width: 360px){
@@ -341,5 +552,17 @@ body{
         max-width: 340px;
         margin-top: 70px;
         margin-bottom: 80px;
+    }
+    .adwehrsysteme__title{
+        font-size: 25px;
+    }
+    .adwehrsysteme__subtitle{
+        font-size: 15px;
+    }
+    .slider__titel{
+        font-size: 20px;
+    }
+    .slider__text{
+        font-size: 15px;
     }
 }
